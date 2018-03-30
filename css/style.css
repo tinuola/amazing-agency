@@ -45,9 +45,9 @@ ol li {
 /* Hero Section
 /**************************************************/
 #hero {
-  background-image: linear-gradient(rgba(18, 18, 76, 0.6), rgba(112, 100, 134, 0.9)), url('../img/hero-bground.jpeg');
+  background-image: url('../img/hero-bground.jpg');
   background-position: center;
-  /* background-size: cover; */
+  background-size: cover;
   background-attachment: fixed;
   height: 800px;
   max-height: 100%;
