@@ -405,10 +405,31 @@ ol li {
 .portfolio-imgs {
   width: 24%;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .portfolio-imgs img {
   width: 100%;
   height: 100%;
+}
+.hide {
+  width: 85%;
+  height: 85%;
+  border: 15px solid #503392;
+  background-color: rgba(0, 0, 0, .48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  display: none;
+}
+.hide img {
+  width: auto;
+  height: auto;
+  margin-left: 5px;
 }
 
 /* Media Queries - Portfolio Section */
