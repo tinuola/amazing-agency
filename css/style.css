@@ -48,7 +48,7 @@ ol li {
   background-image: linear-gradient(rgba(18, 18, 76, 0.6), rgba(112, 100, 134, 0.9)), url('../img/hero-bground.jpeg');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 800px;
   max-height: 100%;
   color: #fff;
