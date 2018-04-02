@@ -488,6 +488,10 @@ ol li {
   font-size: 20px;
   font-weight: 300;
 }
+.counter::after {
+    content: '+';
+    padding-left: 5px;
+}
 
 /* Media Queries - Stats Section */
 @media only screen and (max-width: 798px){
