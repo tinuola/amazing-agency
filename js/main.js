@@ -8,22 +8,18 @@ $(document).ready(function(){
   });
 
   //smooth scrolling
-  $('a[href*="#"]').on('click', function(event) {
+  $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
 
-    if (this.hash !== "") {
+        let target = this.hash;
+        let $target = $(target);
 
-      event.preventDefault();
-
-      let hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        window.location.hash = hash;
-      });
-    }
-  });
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 
   //hover effect on portfolio section images
   $('.portfolio-imgs').on('mouseenter', function(){
