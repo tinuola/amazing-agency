@@ -21,6 +21,7 @@ body{
 .align-right {
   float: right;
 }
+
 .margin-bottom-10 {
   margin-bottom: 10px;
 }
@@ -42,16 +43,23 @@ ol li {
 
 
 /**************************************************/
-/* Hero Section
+/* NavBar
 /**************************************************/
-#hero {
-  background-image: url('../img/hero-bground.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 800px;
-  max-height: 100%;
-  color: #fff;
+#navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0 30px 0;
+  transition: all 0.4s ease;
+}
+.fixed-nav-color {
+  background-color: rgba(78, 40, 146, 0.95);
+}
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 .nav li {
   display: inline-block;
@@ -67,9 +75,84 @@ ol li {
   border-bottom: 2px solid #fff transparent;
   transition: border-bottom 0.3s, color 0.3s;
 }
-.nav li a:hover{
+.nav li a:hover {
   border-bottom: 2px solid #fff;
   transition: border-bottom 0.3s, color 0.3s;
+}
+
+/* Media Queries - Nav */
+@media only screen and (max-width: 1250px){
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 798px){
+  /* Hamburger Menu */
+  .nav-menu {
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    display: block;
+    z-index: 1000;
+  }
+  .burger-nav {
+    background: url('../img/hamburger.png') no-repeat 100% center;
+    display: block;
+    height: 33px;
+    width: 40px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 18px;
+  }
+  #navbar-fixed-top nav ul {
+    height: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 10px;
+    clear: both;
+    transition: all 0.4s ease;
+  }
+  #navbar-fixed-top nav ul.open {
+    height: 200px;
+    clear: both;
+    transition: all 0.4s ease;
+  }
+  #navbar-fixed-top nav ul li {
+    float: none;
+    text-align: right;
+    width: auto;
+    margin: 0px;
+    display: block;
+  }
+  #navbar-fixed-top nav ul li a {
+    color: #503392;
+    font-weight: 300;
+    margin: 0px;
+    padding: 15px 30px 15px 30px;
+    display: block;
+  }
+  #navbar-fixed-top nav ul li a:hover{
+    font-weight: 400;
+    /* padding-left: 14px; */
+    border: none;
+  }
+}
+
+
+/**************************************************/
+/* Hero Section
+/**************************************************/
+#hero {
+  background-image: url('../img/hero-bground.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  max-height: 100%;
+  color: #fff;
 }
 .cta {
   width: 100%;
@@ -122,55 +205,6 @@ ol li {
 @media only screen and (max-width: 1092px){
   .block1{
     display: block;
-  }
-}
-@media only screen and (max-width: 798px){
-  /* Hamburger Menu */
-  .nav-menu {
-    overflow: hidden;
-    position: absolute;
-    right: 30px;
-    top: 38px;
-    display: block;
-    z-index: 1000;
-  }
-  .burger-nav {
-    background: url('../img/hamburger.png') no-repeat 100% center;
-    display: block;
-    height: 33px;
-    width: 40px;
-    cursor: pointer;
-    float: right;
-    margin-bottom: 10px;
-  }
-  .container nav ul {
-    height: 0px;
-    overflow: hidden;
-    background-color: #fff;
-    border-radius: 4px;
-  }
-  .container nav ul.open {
-    height: auto;
-    clear: both;
-  }
-  .container nav ul li {
-    float: none;
-    text-align: right;
-    width: auto;
-    margin: 0px;
-    display: block;
-  }
-  .container nav ul li a {
-    color: #503392;
-    font-weight: 300;
-    margin: 0px;
-    padding: 10px 10px 10px 15px;
-    display: block;
-  }
-  .container nav ul li a:hover{
-    font-weight: 400;
-    padding-left: 14px;
-    border: none;
   }
 }
 @media only screen and (max-width: 578px){
