@@ -1,19 +1,26 @@
 $(document).ready(function(){
-  //
+  //initialize wow
   new WOW().init();
+
+  //fixed navbar color change
+  $(window).on('scroll', function(){
+    if($(this).scrollTop() > 1){
+      $('#navbar-fixed-top').addClass('fixed-nav-color');
+    } else {
+      $('#navbar-fixed-top').removeClass('fixed-nav-color');
+    }
+  });
 
   //hamburger menu
   $('.burger-nav').on('click', function(){
-      $('.container nav ul').toggleClass('open');
+    $('#navbar-fixed-top nav ul').toggleClass('open');
   });
 
   //smooth scrolling
   $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
-
         let target = this.hash;
         let $target = $(target);
-
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function () {
