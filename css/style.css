@@ -116,7 +116,7 @@ ol li {
     transition: all 0.4s ease;
   }
   #navbar-fixed-top nav ul.open {
-    height: 200px;
+    height: 210px;
     clear: both;
     transition: all 0.4s ease;
   }
@@ -133,10 +133,12 @@ ol li {
     margin: 0px;
     padding: 15px 30px 15px 30px;
     display: block;
+    /* Fixes jumpiness on hover */
+    transition: text-shadow .3s;
   }
   #navbar-fixed-top nav ul li a:hover{
-    font-weight: 400;
-    /* padding-left: 14px; */
+    font-weight: 300;
+    text-shadow: 0 0 .15px #503392, 0 0 .15px #503392;
     border: none;
   }
 }
