@@ -1,8 +1,9 @@
+
 $(document).ready(function(){
-  //initialize wow
+  //initialize wow.js
   new WOW().init();
 
-  //fixed navbar color change
+  //sticky navbar color change
   $(window).on('scroll', function(){
     if($(this).scrollTop() > 1){
       $('#navbar-fixed-top').addClass('fixed-nav-color');
@@ -18,15 +19,15 @@ $(document).ready(function(){
 
   //smooth scrolling
   $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        let target = this.hash;
-        let $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
+    e.preventDefault();
+    let target = this.hash;
+    let $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+      window.location.hash = target;
     });
+  });
 
   //hover effect on portfolio section images
   $('.portfolio-imgs').on('mouseenter', function(){
@@ -35,7 +36,7 @@ $(document).ready(function(){
     $('.hide').css('display', 'none');
   });
 
-  //animate stats section counter
+  //animate numbers in stats section
   $('.counter').counterUp({
     delay: 10,
     time: 1000,
