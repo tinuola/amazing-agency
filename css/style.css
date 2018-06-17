@@ -1,4 +1,3 @@
-
 /**************************************************
 ToC
 ----------------
@@ -16,6 +15,7 @@ Footer
 /**************************************************
 Global Style
 **************************************************/
+
 * {
   box-sizing: border-box;
 }
@@ -39,6 +39,7 @@ ol li {
 }
 
 /* Helper Classes */
+
 .align-left {
   float: left;
 }
@@ -50,6 +51,7 @@ ol li {
 /**************************************************
 NavBar
 ***************************************************/
+
 #navbar-fixed-top {
   position: fixed;
   top: 0;
@@ -108,7 +110,6 @@ NavBar
     display: block;
     z-index: 1000;
   }
-
   .burger-nav {
     background: url('../img/hamburger.png') no-repeat 100% center;
     display: block;
@@ -119,7 +120,6 @@ NavBar
     margin-right: 20px;
     margin-bottom: 18px;
   }
-
   #navbar-fixed-top nav ul {
     height: 0;
     overflow: hidden;
@@ -129,13 +129,11 @@ NavBar
     clear: both;
     transition: all 0.4s ease;
   }
-
   #navbar-fixed-top nav ul.open {
     height: 210px;
     clear: both;
     transition: all 0.4s ease;
   }
-
   #navbar-fixed-top nav ul li {
     float: none;
     text-align: right;
@@ -143,16 +141,15 @@ NavBar
     margin: 0;
     display: block;
   }
-
   #navbar-fixed-top nav ul li a {
     color: #503392;
     font-weight: 300;
     margin: 0;
     padding: 15px 30px 15px 30px;
     display: block;
-    transition: text-shadow 0.3s; /* Fixes on-hover "jumpiness" */
+    transition: text-shadow 0.3s;
+    /* Fixes on-hover "jumpiness" */
   }
-
   #navbar-fixed-top nav ul li a:hover {
     font-weight: 300;
     text-shadow: 0 0 0.15px #503392, 0 0 0.15px #503392;
@@ -163,6 +160,7 @@ NavBar
 /**************************************************
 Hero Section
 ***************************************************/
+
 #hero {
   background-image: url('../img/hero-bground.jpg');
   background-position: center;
@@ -228,6 +226,7 @@ Hero Section
 }
 
 /* Media Queries - Hero */
+
 @media only screen and (max-width: 1092px) {
   .block1 {
     display: block;
@@ -238,7 +237,6 @@ Hero Section
   .cta-info h1 {
     font-size: 50px;
   }
-
   .cta-text {
     font-size: 27px;
   }
@@ -248,7 +246,6 @@ Hero Section
   .cta-info h1 {
     font-size: 45px;
   }
-
   .cta-text {
     font-size: 25px;
   }
@@ -257,6 +254,7 @@ Hero Section
 /**************************************************
 Services Section
 ***************************************************/
+
 #services-container {
   display: flex;
   padding-top: 100px;
@@ -304,17 +302,16 @@ Services Section
 }
 
 /* Media Queries - Services Section */
+
 @media only screen and (max-width: 1140px) {
   .what-text-col {
     width: 40%;
     padding: 0 30px;
   }
-
   .what-text-col h1 {
     font-size: 120px;
     line-height: 140px;
   }
-
   .services-col {
     padding-left: 40px;
     width: 60%;
@@ -326,22 +323,18 @@ Services Section
     display: block;
     padding-top: 50px;
   }
-
   .what-text-col {
     width: 100%;
     padding: 20px 0;
   }
-
   .what-text-col h1 {
     font-size: 100px;
     line-height: 110px;
     text-align: center;
   }
-
   .block2 {
     display: inline;
   }
-
   .services-col {
     width: 100%;
     padding-top: 20px;
@@ -366,11 +359,9 @@ Services Section
     font-size: 50px;
     line-height: 50px;
   }
-
   .services-row h3 {
     padding: 10px 0 0 80px;
   }
-
   .services-row p {
     display: inline-block;
     padding: 10px 0 0 0;
@@ -380,6 +371,7 @@ Services Section
 /**************************************************
 Customer Service Section
 ***************************************************/
+
 #customer-srvc {
   background-image: url("../img/cta-bground.png");
   background-size: cover;
@@ -427,12 +419,12 @@ Customer Service Section
 }
 
 /* Media Queries - Customer Service Section */
+
 @media only screen and (max-width: 992px) {
   .customer-cta {
     width: 75%;
     padding: 150px 0;
   }
-
   .block3,
   .block5 {
     display: block;
@@ -443,11 +435,9 @@ Customer Service Section
   .customer-cta {
     width: 100%;
   }
-
   .block4 {
     display: block;
   }
-
   .customer-cta p {
     font-weight: 400;
   }
@@ -462,6 +452,7 @@ Customer Service Section
 /**************************************************
 Portfolio Section
 ***************************************************/
+
 #portfolio-container {
   padding: 100px 0;
   text-align: center;
@@ -537,6 +528,7 @@ Portfolio Section
 }
 
 /* Media Queries - Portfolio Section */
+
 @media only screen and (max-width: 660px) {
   .portfolio-btns {
     display: flex;
@@ -544,23 +536,18 @@ Portfolio Section
     align-items: center;
     flex-wrap: wrap;
   }
-
   .portfolio-btns a {
     margin-bottom: 10px;
   }
-
   .portfolio-btns {
     font-size: 15px;
   }
-
   .portfolio-img-container {
     justify-content: center;
   }
-
   .portfolio-imgs {
     width: 31%;
   }
-
   .portfolio-text p {
     padding: 0 15px;
   }
@@ -575,6 +562,7 @@ Portfolio Section
 /**************************************************
 Stats Section
 ***************************************************/
+
 #stats {
   background-image: linear-gradient(rgba(78, 40, 146, 0.6), rgba(148, 117, 204, 0.9)), url("../img/stats-bground.jpg");
   background-size: cover;
@@ -613,11 +601,11 @@ Stats Section
 }
 
 /* Media Queries - Stats Section */
+
 @media only screen and (max-width: 798px) {
   .stats-row h2 {
     font-size: 30px;
   }
-
   .stats-row p {
     font-size: 16px;
   }
@@ -630,12 +618,10 @@ Stats Section
     align-items: center;
     padding: 80px 0;
   }
-
   .stats-col {
     padding: 0 30px;
     margin-bottom: 50px;
   }
-
   .stats-row {
     width: 80%;
     justify-content: center;
@@ -648,7 +634,6 @@ Stats Section
   #stats {
     background-image: linear-gradient(rgba(78, 40, 146, 0.6), rgba(148, 117, 204, 0.9)), url();
   }
-
   .stats-row {
     width: 100%;
   }
@@ -663,6 +648,7 @@ Stats Section
 /**************************************************
 Contact Section
 ***************************************************/
+
 #contact {
   background-color: #232323;
   color: #fff;
@@ -730,9 +716,11 @@ Contact Section
 .address-row h3,
 .address-row p {
   padding-left: 80px;
+  color: #fff;
 }
 
 /* Contact Form */
+
 input::placeholder,
 textarea::placeholder {
   font-family: 'Lato', sans-serif;
@@ -781,26 +769,23 @@ input[type=submit]:hover {
 }
 
 /* Media Queries - Contact Section */
+
 @media only screen and (max-width: 900px) {
   #contact-container {
     padding: 80px 0;
   }
-
   .contact-row {
     justify-content: center;
     flex-wrap: wrap;
   }
-
   .formbox,
   .contact-info {
     width: 100%;
   }
-
   .address-row h3,
   .address-row p {
     padding-left: 60px;
   }
-
   .contact-info p {
     font-size: 17px;
   }
@@ -809,6 +794,7 @@ input[type=submit]:hover {
 /**************************************************
 Footer
 ***************************************************/
+
 footer {
   background-color: #1f1f1f;
 }
@@ -842,6 +828,8 @@ footer p,
   text-decoration: none;
 }
 
+.social a,
+.attribution a,
 .attribution a:visited,
 .webdev-site a:visited,
 .social a:visited {
@@ -849,11 +837,11 @@ footer p,
 }
 
 /* Media Queries - Footer */
+
 @media only screen and (max-width: 578px) {
   #footer-container {
     display: block;
   }
-
   .profile {
     margin-bottom: 35px;
   }
