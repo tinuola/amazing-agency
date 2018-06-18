@@ -725,6 +725,12 @@ a[href^="tel"] {
 
 /* Contact Form */
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input::placeholder,
 textarea::placeholder {
   font-family: 'Lato', sans-serif;
