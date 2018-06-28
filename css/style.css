@@ -830,7 +830,11 @@ footer p,
   margin: 0 12px;
 }
 
-.social .social-icon {
+.social {
+  display: flex;
+}
+
+.social a {
   margin-right: 15px;
 }
 
